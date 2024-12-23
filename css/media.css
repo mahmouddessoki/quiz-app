@@ -1,0 +1,21 @@
+@media screen and (max-width: 768px) {
+    #question-choices li {
+        width: 100% !important;
+    }
+    #question-text p {
+        font-size: 16px !important;
+    }
+}
+@media screen and (max-width: 320px) {
+    #question-choices li {
+        font-size: 16px !important;
+        border-radius: 10px !important;
+    }
+    #question-text p {
+        font-size: 15px !important;
+    }
+    #quiz-question-header {
+        flex-direction: column !important;
+        row-gap: 5px;
+    }
+}

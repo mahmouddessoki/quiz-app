@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./imgs/quiz.png" type="image/x-icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="./css/index_style.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <title>quiz app</title>
+</head>
+
+<body>
+
+    <section id="quiz" class="overflow-hidden py-5">
+        <div class="container">
+            <div id="quiz-header" class="mx-auto mb-5 animate__animated animate__zoomInDown">
+                <h1 id="title" class="text-capitalize  text-center mb-0">Quiz App</h1>
+            </div>
+            <div id="quiz-specification-form" class="col-md-8  col-12 mx-auto">
+                <form action="" method="post" class="animate__animated animate__rollIn">
+
+                    <div class="form-floating mb-3">
+                        <select class="form-select shadow-none border-0" id="category"
+                            aria-label="Floating label select example">
+                            <option value="any" selected>Any Category</option>
+                            <option value="9">General Knowledge</option>
+                            <option value="10">Entertainment: Books</option>
+                            <option value="11">Entertainment: Film</option>
+                            <option value="18">Science: Computers</option>
+                            <option value="21">Sports</option>
+                        </select>
+                        <label for="category" class="text-capitalize">choose category</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <select class="form-select shadow-none border-0" id="difficulty">
+                            <option value="any" selected>Any Difficulty</option>
+                            <option value="easy">Easy</option>
+                            <option value="medium">Medium</option>
+                            <option value="hard">Hard</option>
+                        </select>
+                        <label for="difficulty" class="text-capitalize">choose difficulty level</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control  border-0 shadow-none" id="amount"
+                            placeholder="Number of questions">
+                        <label for="amount" class="text-capitalize">Number of questions</label>
+                    </div>
+
+                    <button id="quiz-start" class="btn btn-primary d-block w-100 fs-4 py-1">Start</button>
+                </form>
+            </div>
+            <div id="quiz-question">
+                
+            </div>
+
+
+
+        </div>
+    </section>
+
+
+
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script type="module" src="./js/question.js" ></script>
+    <script type="module" src="./js/quiz.js"></script>
+    <script src="./js/main.js" type="module"></script>
+</body>
+
+</html>
